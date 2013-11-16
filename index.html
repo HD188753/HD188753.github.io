@@ -1,55 +1,268 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style type="text/css">h1 { font-size: 60px; 
-  font-family: 'PT Sans Caption', sans-serif;
-color: #F5F5F5;
-text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+<head><style type="text/css">#centerText {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 25px;
+position:relative;
+bottom: 17.5px;
 text-align: center;
+width: 100%;
 }
-html { 
-  background: url(http://www.mediafire.com/convkey/7a15/837wvew245w09796g.jpg) ; 
-  background-repeat: repeat;
+
+#navBar { 
+position: fixed;
+width: 100%;
+height: 60px;
+background: #202020;
+bottom: -10px;
+right: 0%;
 }
-subline {
-display: run-in;
-width:80%;
-height:5px;
-background-color:#F5F5F5;
-box-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+#navBarLining {
 position: relative;
-left: 10%;
+width: 100%;
+height: 1px;
+background: #BDBDBD;
 }
 
-p {
-color: #F5F5F5;
-font-size: 20px; 
-font-family: 'Open Sans Condensed', sans-serif;
+#homeText {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 25px;
+position:absolute;
+top:-30px;
+height: 70px;
+width: 70px;
+background-color: #66CC00;
 text-align: center;
+left: calc(50% - 190px);
 }
-</style>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+#statsText {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 25px;
+position:absolute;
+top:-30px;
+height: 70px;
+width: 70px;
+background-color: #66CC00;
+text-align: center;
+left: calc(50% - 270px);
+}
 
-  ga('create', 'UA-45639438-1', 'hd188753.github.io');
-  ga('send', 'pageview');
+body {
+background-color: #F0F8FF;
+}
 
-</script>
+#infoText {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 25px;
+position:absolute;
+top:-30px;
+height: 70px;
+width: 70px;
+background-color: #66CC00;
+text-align: center;
+left: calc(50% + 200px);
+}
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+#demoText {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 25px;
+position:absolute;
+top:-30px;
+height: 70px;
+width: 70px;
+background-color: #66CC00;
+text-align: center;
+left: calc(50% + 120px);
+}
+
+#signiture {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 15px;
+position:absolute;
+top:-10px;
+height: 50px;
+width: 115px;
+text-align: center;
+left: calc(50% + 280px);
+}
+
+#colorCust {
+font-family: 'Roboto Condensed', sans-serif;
+color:#FFFFFF;
+font-size: 12px;
+position:absolute;
+top:-10px;
+height: 50px;
+width: 115px;
+text-align: center;
+left: calc(50% - 400px);
+}
+
+#redPannel {
+position: absolute;
+height: 15px;
+width: 15px;
+background-color: #CC0033;
+top: 25px;
+left: calc(50% - 390px);
+border: 1px solid #BDBDBD;
+}
+
+#bluePannel {
+position: absolute;
+height: 15px;
+width: 15px;
+background-color: #009999;
+top: 25px;
+left: calc(50% - 365px);
+border: 1px solid #BDBDBD;
+}
+
+#orangePannel {
+position: absolute;
+height: 15px;
+width: 15px;
+background-color: #FF6600;
+top: 25px;
+left: calc(50% - 340px);
+border: 1px solid #BDBDBD;
+}
+
+#greenPannel {
+position: absolute;
+height: 15px;
+width: 15px;
+background-color: #66CC00;
+top: 25px;
+left: calc(50% - 315px);
+border: 1px solid #BDBDBD;
+}</style>
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <title>Turbo-Octo-Happiness</title>
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
 <style type="text/css"></style></head>
-<body>
-  <h1>Turbo-Octo-Happiness
-    <subline></subline>
-  </h1>
+<body style="">
+  <div id="navBar">
+    <div id="navBarLining"></div>
+    <p id="centerText">Turbo-Octo-Happiness</p>
+    <p id="homeText">HOME</p>
+    <p id="statsText">STATS</p>
+    <p id="demoText">DEMO</p>
+    <p id="infoText">INFO</p>
+    <p id="colorCust">COLOR CUSTOMIZATION</p>
+      <div id="redPannel"></div>
+      <div id="bluePannel"></div>
+      <div id="orangePannel"></div>
+      <div id="greenPannel"></div>
+    <p id="signiture">BUILT BY ANDREW SLOMSKI</p>
+  </div>
 
+   
+<script>$( "#statsText" )
+  .mouseenter(function() {
+		$( "#statsText" ).animate({ "top": "-40px" }, "fast" );
+  })
+  .mouseleave(function() {
+		$( "#statsText" ).animate({ "top": "-30px" }, "fast" );
+  });
 
+$( "#homeText" )
+  .mouseenter(function() {
+		$( "#homeText" ).animate({ "top": "-40px" }, "fast" );
+  })
+  .mouseleave(function() {
+		$( "#homeText" ).animate({ "top": "-30px" }, "fast" );
+  });
+$( "#demoText" )
+  .mouseenter(function() {
+		$( "#demoText" ).animate({ "top": "-40px" }, "fast" );
+  })
+  .mouseleave(function() {
+		$( "#demoText" ).animate({ "top": "-30px" }, "fast" );
+  });
+$( "#infoText" )
+  .mouseenter(function() {
+		$( "#infoText" ).animate({ "top": "-40px" }, "fast" );
+  })
+  .mouseleave(function() {
+		$( "#infoText" ).animate({ "top": "-30px" }, "fast" );
+  });
 
-<script>
+$( "#redPannel" )
+  .click(function() {
+    $( "#infoText").css("background-color", "#CC0033");
+    $( "#statsText").css("background-color", "#CC0033");
+    $( "#demoText").css("background-color", "#CC0033");
+    $( "#homeText").css("background-color", "#CC0033");
+    
+	$( "#infoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#infoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-30px" }, "fast" );
+  });
 
-</script></body>
+$( "#bluePannel" )
+  .click(function() {
+    $( "#infoText").css("background-color", "#009999");
+    $( "#statsText").css("background-color", "#009999");
+    $( "#demoText").css("background-color", "#009999");
+    $( "#homeText").css("background-color", "#009999");
+    
+	$( "#infoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#infoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-30px" }, "fast" );
+  });
+
+$( "#orangePannel" )
+  .click(function() {
+    $( "#infoText").css("background-color", "#FF6600");
+    $( "#statsText").css("background-color", "#FF6600");
+    $( "#demoText").css("background-color", "#FF6600");
+    $( "#homeText").css("background-color", "#FF6600");
+    
+	$( "#infoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#infoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-30px" }, "fast" );
+  });
+ 
+$( "#greenPannel" )
+  .click(function() {
+    $( "#infoText").css("background-color", "#66CC00");
+    $( "#statsText").css("background-color", "#66CC00");
+    $( "#demoText").css("background-color", "#66CC00");
+    $( "#homeText").css("background-color", "#66CC00");
+    
+	$( "#infoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#infoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#statsText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#demoText" ).animate({ "top": "-30px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-40px" }, "fast" );
+    $( "#homeText" ).animate({ "top": "-30px" }, "fast" );
+  });
+ 
+ </script></body>
